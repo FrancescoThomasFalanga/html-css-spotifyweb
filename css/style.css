@@ -297,8 +297,15 @@ section {
     gap: 20px;
 }
 /* __________________________________________________ */
+.player-controls-check:hover {
+    cursor: pointer;
+}
+/* __________________________________________________ */
 .fa-circle-play {
     font-size: 27px;
+}
+.fa-circle-play:hover {
+    transform: scale(1.2);
 }
 /* __________________________________________________ */
 .song-progression {
