@@ -122,13 +122,16 @@ img[src*=profile] {
 }
 /* /NAVIGATION BAR */
 
+
+
+/* MIDDLE-ROW */
 section {
     flex-grow: 1;
     width: 100%;
     overflow-y: scroll;
     background-color: #141922;
 }
-
+/* _______________________________________________ */
  .go-premium {
     display: flex;
     justify-content: flex-end;
@@ -140,7 +143,7 @@ section {
     background-color: #080b12;
     opacity: 0.8;
 }
-
+/* _______________________________________________ */
 .upgrade-button {
     padding: 10px 30px;
     border-radius: 40px;
@@ -149,7 +152,7 @@ section {
     font-weight: bold;
     color: white;
 }
-
+/* _______________________________________________ */
 .music-row {
     display: flex;
     justify-content: center;
@@ -158,6 +161,69 @@ section {
     font-size: 10px;
     font-weight: bold;
 }
+/* _______________________________________________ */
+.middle-row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 15px;
+    color: white;
+}
+/* _______________________________________________ */
+.recently-played, .created-for, .popular-artists {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+/* _______________________________________________ */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* _______________________________________________ */
+.different-color {
+    color: #bdbdbd;
+    font-size: 10px;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+.different-color:hover {
+    text-decoration: underline;
+}
+/* _______________________________________________ */
+.fit-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.fit-img-different {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+/* _______________________________________________ */
+.song-name:hover {
+    text-decoration: underline;
+}
+/* /MIDDLE-ROW */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
