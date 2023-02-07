@@ -201,10 +201,12 @@ section {
     top: calc(50% - 35px);
     right: calc(50% - 25px);
     font-size: 50px;
+    cursor: pointer;
 }
 /* __________________________________________________ */
 .fit-img:hover, .fit-img-different:hover {
-    filter:brightness(0.7);
+    filter:brightness(0.6);
+    cursor: pointer;
 }
 /* __________________________________________________ */
 .img-shadow:hover .absolute {
@@ -321,10 +323,10 @@ section {
     cursor: pointer;
 }
 /* __________________________________________________ */
-.fa-circle-play {
+.more-bigger {
     font-size: 27px;
 }
-.fa-circle-play:hover {
+.more-bigger:hover {
     transform: scale(1.2);
 }
 /* __________________________________________________ */
