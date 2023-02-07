@@ -152,6 +152,9 @@ section {
     font-weight: bold;
     color: white;
 }
+.upgrade-button:hover {
+    transform: scale(1.1);
+}
 /* _______________________________________________ */
 .music-row {
     display: flex;
@@ -270,3 +273,43 @@ section {
     margin-left: 5px;
 }
 /* /LEFT CONTROLS */
+
+
+
+/* MIDDLE CONTROLS */
+.middle-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/* __________________________________________________ */
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+/* __________________________________________________ */
+.fa-circle-play {
+    font-size: 27px;
+}
+/* __________________________________________________ */
+.song-progression {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 9px;
+}
+/* /MIDDLE CONTROLS */
+
+
+
+/* RIGHT CONTROLS */
+.right-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+}
