@@ -8,6 +8,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
 
 /* NAVIGATION BAR */
 nav {
@@ -19,7 +26,7 @@ nav {
     padding: 15px;
     background-color: #000000;
     color: #666666;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
 }
 /* _______________________________________________ */
@@ -72,10 +79,6 @@ img[src*=profile] {
     background-color: #666666;
 }
 /* _______________________________________________ */
-.playlist-name, #app-download {
-    font-size: 12px;
-}
-/* _______________________________________________ */
 #go-profile {
     display: flex;
     align-items: center;
@@ -85,7 +88,41 @@ img[src*=profile] {
 /* _______________________________________________ */
 #profile {
     color: white;
-    font-size: 12px;
 }
 /* /NAVIGATION BAR */
 
+section {
+    width: calc(100% - 220px);
+    height: 100vh;
+    background-color: #141922;
+}
+
+.go-premium {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 220px);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 20px;
+    background-color: #080b12;
+    opacity: 0.8;
+}
+
+.upgrade-button {
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: 1px solid white;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.music-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 90px;
+    font-size: 10px;
+    font-weight: bold;
+}
