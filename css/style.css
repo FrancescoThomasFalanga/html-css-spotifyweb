@@ -7,3 +7,85 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+
+/* NAVIGATION BAR */
+nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 220px;
+    height: 100vh;
+    padding: 15px;
+    background-color: #000000;
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* _______________________________________________ */
+a {
+    color: #666666;
+    text-decoration: none;
+}
+/* _______________________________________________ */
+a:hover {
+    color: white;
+}
+/* _______________________________________________ */
+h5 {
+    color: white;
+}
+/* _______________________________________________ */
+hr {
+    border: 1px solid #383838;
+    margin: 10px 0;
+}
+/* _______________________________________________ */
+.left-row, .add-playlist-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* _______________________________________________ */
+.playlist-col, .search-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* _______________________________________________ */
+.add-playlist-button {
+    background-color: #a3a3a3;
+    padding: 8px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+/* _______________________________________________ */
+img[src*=logo] {
+    width: 70%;
+}
+/* _______________________________________________ */
+img[src*=profile] {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #666666;
+}
+/* _______________________________________________ */
+.playlist-name, #app-download {
+    font-size: 12px;
+}
+/* _______________________________________________ */
+#go-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+/* _______________________________________________ */
+#profile {
+    color: white;
+    font-size: 12px;
+}
+/* /NAVIGATION BAR */
+
