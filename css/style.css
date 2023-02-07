@@ -190,6 +190,26 @@ section {
     align-items: center;
     text-align: center;
 }
+/* __________________________________________________ */
+.img-shadow {
+    position: relative;
+}
+/* __________________________________________________ */
+.absolute {
+    display: none;
+    position: absolute;
+    top: calc(50% - 35px);
+    right: calc(50% - 25px);
+    font-size: 50px;
+}
+/* __________________________________________________ */
+.fit-img:hover, .fit-img-different:hover {
+    filter:brightness(0.7);
+}
+/* __________________________________________________ */
+.img-shadow:hover .absolute {
+    display: inline-block;
+}
 /* _______________________________________________ */
 .different-color {
     color: #bdbdbd;
