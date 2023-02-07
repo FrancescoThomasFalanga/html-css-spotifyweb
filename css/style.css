@@ -9,10 +9,10 @@ body {
 }
 
 .container {
-    position: relative;
+    height: calc(100vh - 80px);
     width: 100%;
-    height: 100%;
     display: flex;
+
 }
 
 
@@ -22,7 +22,7 @@ nav {
     flex-flow: column;
     justify-content: space-between;
     width: 220px;
-    height: 100vh;
+    height: calc(100vh - 80px);
     padding: 15px;
     background-color: #000000;
     color: #666666;
@@ -92,12 +92,24 @@ img[src*=profile] {
 /* /NAVIGATION BAR */
 
 section {
-    width: calc(100% - 220px);
-    height: 100vh;
+    flex-grow: 1;
+    width: 100%;
+    overflow-y: scroll;
     background-color: #141922;
 }
 
-.go-premium {
+.gay {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 80px 80px 30px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* .go-premium {
     display: flex;
     justify-content: flex-end;
     width: calc(100% - 220px);
@@ -125,4 +137,22 @@ section {
     margin-top: 90px;
     font-size: 10px;
     font-weight: bold;
+} */
+
+
+
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    height: 80px;
+    background-color: #222222;
+}
+/* __________________________________________________ */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
