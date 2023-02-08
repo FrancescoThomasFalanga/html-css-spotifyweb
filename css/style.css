@@ -76,6 +76,10 @@ hr {
     flex-direction: column;
     gap: 20px;
 }
+
+.side-menu {
+    display: none;
+}
 /* _______________________________________________ */
 .playlist-col, .search-col {
     display: flex;
@@ -235,12 +239,12 @@ section {
 .fit-img {
     width: 100%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .fit-img-different {
     width: 100%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 50%;
 }
 /* _______________________________________________ */
@@ -401,19 +405,15 @@ section {
         width: calc(100% / 4 - 20px);
         gap: 3px;
     }
-
-    .fit-img, .fit-img-different {
-        margin-bottom: 0;
-    }
-
+/* __________________________________________________ */
     .different-color {
         margin-top: 5px;
     }
-
+/* __________________________________________________ */
     .some-margin {
         margin-left: 10px;
     }
-
+/* __________________________________________________ */
     h2 {
         margin-left: 10px;
     }
@@ -425,7 +425,26 @@ section {
 
 /* MEDIA QUERY SMALL */
 @media screen and (min-width:576px) and (max-width:767px) {
+    .card {
+        width: calc(100% / 2 - 20px);
+        gap: 3px;
+    }
+/* __________________________________________________ */
+    .like-add {
+        padding: 0;
+    }
+/* __________________________________________________ */
+    .player {
+        gap: 5px;
+    }
 
+    .some-margin {
+        margin-left: 10px;
+    }
+/* __________________________________________________ */
+    h2 {
+        margin-left: 10px;
+    }
 }
 /* /MEDIA QUERY SMALL */
 
@@ -434,6 +453,93 @@ section {
 
 /* MEDIA QUERY EXTRA-SMALL */
 @media screen and (max-width:575px) {
+    .card {
+        width: calc(100% / 2 - 20px);
+        gap: 3px;
+    }
 
+    nav {
+        width: 50px;
+        justify-content: space-between;
+        flex-direction: inherit;
+    }
+/* __________________________________________________ */
+    .left-row, .profile-col {
+        display: none;
+    }
+/* __________________________________________________ */
+    .side-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+/* __________________________________________________ */
+    .up-side-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+/* __________________________________________________ */
+    .down-side-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+/* __________________________________________________ */
+    .common-hover-button {
+        padding: 0;
+        font-size: 24px;
+    }
+/* __________________________________________________ */
+    .playlist-name:hover {
+        border-left: none;
+    }
+/* __________________________________________________ */
+    .fa-gear {
+        font-size: 10px;
+    }
+/* __________________________________________________ */
+    img[src*=profile] {
+        width: 25px;
+        height: 25px;
+    }
+/* __________________________________________________ */
+    #logo-small-centered {
+        text-align: center;
+    }
+
+    .music-row {
+        font-size: 12px;
+        gap: 25px;
+    }
+
+    .some-margin {
+        margin-left: 10px;
+    }
+/* __________________________________________________ */
+    h2 {
+        margin-left: 10px;
+    }
+/* __________________________________________________ */
+    .like-add {
+        padding: 0;
+    }
+/* __________________________________________________ */
+    .player {
+        gap: 5px;
+    }
+/* __________________________________________________ */
+    .player-controls {
+        gap: 8px;
+    }
+/* __________________________________________________ */
+    .left-controls, .middle-controls, .right-controls {
+        width: inherit;
+        max-width: inherit;
+        min-width: inherit;
+    }
 }
 /* MEDIA QUERY EXTRA-SMALL */
