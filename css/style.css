@@ -362,6 +362,7 @@ section {
     background-color: white;
     height: 6px;
     border-radius: 25px;
+    position: relative;
 }
 .big-volume-progress:hover {
     background-color: #bcf55d;
@@ -374,8 +375,17 @@ section {
     height: 6px;
     border-radius: 25px;
 }
+/* __________________________________________________ */
+.big-volume-progress:hover .circle {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: -2px;
+    border-radius: 50%;
+    background-color: white;
+}
 /* /MIDDLE CONTROLS */
-
 
 
 /* RIGHT CONTROLS */
@@ -403,6 +413,16 @@ section {
     height: 4px;
     border-radius: 25px;
     background-color: #5a5a5a;
+}
+/* __________________________________________________ */
+.small-volume-progress:hover .circle {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: -4px;
+    border-radius: 50%;
+    background-color: white;
 }
 /* /RIGHT CONTROLS */
 
@@ -525,7 +545,6 @@ section {
 
     .music-row {
         font-size: 12px;
-        gap: 25px;
     }
 
     .some-margin {
