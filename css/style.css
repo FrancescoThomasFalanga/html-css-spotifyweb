@@ -119,6 +119,9 @@ img[src*=profile] {
 }
 /* HOVER NAV BAR */
 .playlist-name:hover {
+    border-left: 3px solid white;
+}
+.playlist-name:active {
     border-left: 3px solid #87c62c;
 }
 /* /NAVIGATION BAR */
